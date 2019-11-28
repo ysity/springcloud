@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/eurekaclient/eurekaclient.iml" filepath="$PROJECT_DIR$/eurekaclient/eurekaclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/eurekaserver/eurekaserver.iml" filepath="$PROJECT_DIR$/eurekaserver/eurekaserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/pispringcloud.iml" filepath="$PROJECT_DIR$/pispringcloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/resttemplate/resttemplate.iml" filepath="$PROJECT_DIR$/resttemplate/resttemplate.iml" />
     </modules>
   </component>
 </project>

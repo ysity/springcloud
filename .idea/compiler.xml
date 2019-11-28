@@ -9,12 +9,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eurekaclient" />
         <module name="eurekaserver" />
+        <module name="resttemplate" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eurekaclient" target="1.8" />
       <module name="eurekaserver" target="1.8" />
       <module name="pispringcloud" target="1.8" />
+      <module name="resttemplate" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
