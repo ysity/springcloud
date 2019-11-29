@@ -3,6 +3,7 @@ package com.crescentd.controller;
 import com.crescentd.entity.Student;
 import com.crescentd.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
@@ -13,6 +14,9 @@ public class StudentHandle {
 
     @Autowired
     private StudentRepository studentRepository;
+
+    @Value("${server.port}")
+    private String port;
 
     @GetMapping("/findAll")
     public Collection<Student> findAll(){
@@ -37,5 +41,10 @@ public class StudentHandle {
     @DeleteMapping("/deleteById/{id}")
     public void deleteById(@PathVariable("id") long id){
         studentRepository.delete(id);
+    }
+
+    @GetMapping("/index")
+    public String index(){
+        return "当前端口是:"+this.port;
     }
 }
