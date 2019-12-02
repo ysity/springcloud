@@ -1,0 +1,18 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: remoteconfigserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:ysity/springcloud.git
+          search-paths: config
+          username: ysity
+          password: a8310375
+      label: master
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
