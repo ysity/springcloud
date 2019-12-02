@@ -9,8 +9,8 @@ spring:
         git:
           uri: git@github.com:ysity/springcloud.git
           search-paths: config
-          username: ysity
-          password: a8310375
+          username:
+          password:
       label: master
 eureka:
   client:
