@@ -17,6 +17,6 @@ public class NativeConfigController {
 
     @GetMapping("/index")
     public String index(){
-        return this.port + "-" + this.version;
+        return "本地配置文件调用："+this.port + "-" + this.version;
     }
 }
